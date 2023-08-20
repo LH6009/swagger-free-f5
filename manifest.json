@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Swagger Free F5",
+  "description": "保存在 Swagger 界面输入的参数",
+  "permissions": ["storage", "activeTab", "tabs"],
+  "content_scripts": [{"matches": ["<all_urls>"], "js": ["content_script.js"]}],
+  "action": {"default_popup": "popup.html"},
+  "background": {"service_worker": "background.js"},
+  "options_page": "options.html",
+  "icons": {"48": "icon.png"}
+}

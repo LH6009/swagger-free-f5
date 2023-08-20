@@ -1,0 +1,128 @@
+.button {
+    display: inline-block;
+    background-color: #ccc;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2196F3;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    width: 60px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 8px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#refreshButton {
+    display: none;
+    margin-top: 20px;
+    width: 120px;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+#refreshButton {
+    display: none;
+    margin-top: 20px;
+    width: 129px;
+    padding: 12px 24px;
+    font-size: 18px;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+}
+
+.switch-label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+body {
+    width: 170px;
+    padding: 25px 20px 10px;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.help-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
