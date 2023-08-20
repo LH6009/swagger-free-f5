@@ -200,4 +200,7 @@ function allFunctions() {
     }
     return localValue;
   }
+
+  // 获取swagger版本
+  getSwaggerVersion();
 }
