@@ -93,7 +93,9 @@ function allFunctions() {
       let targetNode = mutation.target;
       let addedNodes = mutation.addedNodes;
       if (targetNode.classList.contains('opblock-body') && addedNodes.length > 0) {
-        return mutation;
+        if (addedNodes[0].nodeType === Node.COMMENT_NODE) {
+          return mutation;
+        }
       }
     }
     return null
