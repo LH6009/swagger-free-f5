@@ -141,9 +141,8 @@ function allFunctions() {
           if (mutation.type === "childList" && targetNode.type === 'textarea' && targetNode.classList.contains('body-param__text')) {
             const localValue = localStorage.getItem(targetNode.id);
             if (localValue && localValue !== initValue) {
-              const newValue = dealLocalValueIfModelChange(initValue, localValue);
-              targetNode.innerHTML = newValue
-              targetNode.value = newValue
+              targetNode.innerHTML = localValue
+              targetNode.value = localValue
             }
           }
         });
@@ -198,7 +197,7 @@ function allFunctions() {
           initValueObject[key] = localValueObject[key];
         }
       }
-      return JSON.stringify(initValueObject, null, 4);
+      return JSON.stringify(initValueObject, null, 2);
     }
     return localValue;
   }
