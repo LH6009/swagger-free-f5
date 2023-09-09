@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
   "version": "1.2",
+  "default_locale": "zh",
   "name": "Swagger Free F5",
   "description": "保存在 Swagger 界面输入的参数",
   "permissions": ["storage", "activeTab", "tabs"],
